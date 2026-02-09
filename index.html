@@ -14,7 +14,11 @@
 
     <!-- Header Section  -->
 
-    <header>
+    <header id="header">
+        <section class="shoar">
+            <p>Fresh Means Deliciuos</p>
+        </section>
+        <!-- NavBar Section  -->
         <nav class="nav-bar">
             <h1>FOODMART</h1>
             <ul class="menu">
@@ -27,7 +31,7 @@
                 <select name="" id="">
                     <option value="">Select Categories</option>
                     <option value="">Vegetables</option>
-                    <option value="">Friuts</option>
+                    <option value="">Fruits</option>
                     <option value="">Banana</option>
                     <option value="">Orange</option>
                     <option value="">Grapes</option>
@@ -42,6 +46,7 @@
                 <div class="iconBox"><img src="/assets/ico/🦆 icon _shopping-cart_.png" alt=""><label
                         for="">Shopping</label></div>
             </section>
+            <!-- NavBar Section Ends  -->
         </nav>
     </header>
 
@@ -51,7 +56,7 @@
     <section class="head-section">
         <div class="poster">
             <div class="pic1">
-                <img src="/assets/img/0add2098-7fbb-4bd6-906d-68d7bfe42897 1.png" alt="Fruits">
+                <img src="/assets/img/fruit.png" alt="Fruits">
             </div>
             <div class="starDiscount">
                 <img src="/assets/img/Star 1.png" alt="">
@@ -70,14 +75,48 @@
 
     <!-- Poster Section Ends  -->
 
-    <section class="productIntro">    
+    <!-- Main Section  -->
+    <main class="Container">
+        <!-- Mobile Section  -->
+        <section class="mobileSection" id="mobileSection">
+            <div class="d_flex justify_content_space">
+                <div>
+                    <a href="#">❌</a>
+                </div>
+                <!-- searchBox Mobile -->
+                <div class="searchBox">
+                    <input type="text" placeholder="Search Product">
+                    <select name="" id="">
+                        <option value="">All Categories</option>
+                        <option value="">Fruits</option>
+                        <option value="">Vagetables</option>
+                        <option value="">Others</option>
+                    </select>
+                    <img src="/assets/img/search.png" alt="">
+                </div>
+            </div>
+        <ul class="list_style_none line_height_2 text_2">
+            <li>Home</li>
+            <li>Fruits</li>
+            <li>Vagetables</li>
+        </ul>
+        <!-- Operations Section  -->
+        <ul class="list_style_none line_height_2 text_2">
+            <li>Profiles</li>
+            <li>Wishlist</li>
+            <li>My Cart</li>
+        </ul>
+
+        <!-- Product Introduce Section  -->
+        </section>
+        <section class="productIntro">
             <div class="titleIntro">
                 <strong class="txtTitle">Love Our Categories</strong>
                 <button class="productBtn">Show More <img src="/assets/ico/arrow.png" alt=""></button>
             </div>
             <div class="productSection">
                 <div class="productItems">
-                    <img class="productImg" src="/assets/img/pexels-olga-1153655 1.png" alt="Olga">
+                    <img class="productImg" src="/assets/img/pexels (8).png" alt="Olga">
                     <div class="productCover"></div>
                     <div class="productInfo">
                         <h4>Fruits</h4>
@@ -86,7 +125,6 @@
                             <span>View More</span>
                             <img src="/assets/ico/arrow.png" alt="">
                         </button>
-
                     </div>
                 </div>
                 <div class="productItems">
@@ -174,53 +212,584 @@
                     </div>
                 </div>
             </div>
-    </section>
+        </section>
 
-    <!-- best sellers production  -->
-     <section class="productIntro">
-        <div class="titleIntro">
-            <h1 class="txtTitle">Love Our Categories</h1>
-            <button class="productBtn">ShowMore <img src="/assets/ico/arrow.png" alt=""></button>
-        </div>
-        <section class="CardsSection">
-            <div class="CardsItems">
-                <img src="/assets/img/pexels-john-finkelstein-1630588-removebg-preview 1.png" alt="">
-                <div class="CardsInfo">
-                   <span>Fruits</span>
-                   <strong>Pomme</strong>
-                   <span class="star ">&#9733;</span>
-                   <span class="star ">&#9733;</span>
-                   <span class="star ">&#9733;</span>
-                   <span class="star ">&#9733;</span>
-                   <span class="star ">&#9733;</span>
-                </div>
-                <div class="sellPart">
-                    <b>175.00</b>
-                    <small>DA</small>
-                    <del>240.00 <small>DA</small></del>
-                </div>
-                <div class="inputBox">
-                    <div class="SizeBox">
-                        <label for="">Size : </label>
-                        <select name="" id="">
-                            <option value="">1</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
-                            <small>Kg</small>
-                        </select>
-                        <div class="QuantityBox">
-                            <label for="">Quantity</label>
-                            <input type="text">
-                            <small>+</small>
-                            <small>-</small>
+        <!-- Offers production  -->
+
+        <section class="productIntro d_flex flex_direction_column align_items_center">
+            <div class="titleIntro w_70">
+                <strong class="txtTitle">Love Our Categories</strong>
+                <button class="productBtn">Show More <img src="/assets/ico/arrow.png" alt=""></button>
+            </div>
+            <section class="cardSection d_flex justify_content_center gap_2 w_70">
+                <div
+                    class="cardItem text_green border_green rounded_2 d_flex align_items_center justify_content_space flex_direction_column p_2 w_33 p_relative">
+                    <img class="w_100" src="/assets/img/card (1).png" alt="">
+                    <div class="cardInfo w_100 d_flex flex flex_direction_column gap_1">
+                        <span>Fruits</span>
+                        <strong>Pomme</strong>
+                        <div class="starBox">
+                            <span class="star text_yellow text_3">&#9733;</span>
+                            <span class="star text_yellow text_3">&#9733;</span>
+                            <span class="star text_yellow text_3">&#9733;</span>
+                            <span class="star text_yellow text_3">&#9733;</span>
+                            <span class="star text_yellow text_3">&#9733;</span>
+                            <span class="star text_2">(1)</span>
                         </div>
+                        <div class="pirceBox">
+                            <b class="text_3">175.00</b>
+                            <small class="text_1">DA</small>
+                            <del class="text_3">175.00 <small class="text_1">DA</small></del>
+                        </div>
+                        <div class="inputBox d_flex gap_1 w_80">
+                            <div class="sizeBox w_60">
+                                <label for="">Size:</label>
+                                <div class="p_relative">
+                                    <select class="p_1 rounded_1 w_100 mt_1 border_green name="" id="">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                                <small class=" p_h_center right_2">KG</small>
+                                </div>
+                            </div>
+                            <div class="quantityBox w_40">
+                                <label for="">Quantity:</label>
+                                <div class="p_relative">
+                                    <input class="p_1 rounded_1 w_100 mt_1 border_green text_center" type="number">
+                                    <small class="p_h_center right_1 pointer text_2">+</small>
+                                    <small class="p_h_center left_1  pointer text_2">-</small>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="cardBtn text_yellow text_green rounded_1 bg_yellow p_1 border_none">
+                            Add To Card &nbsp;
+                        </button>
+                        <span class="heart p_absolute text_4 top_1 right_2 ">
+                            &#9825;
+                        </span>
                     </div>
-
                 </div>
+                <div
+                    class="cardItem text_green border_green rounded_2 d_flex align_items_center justify_content_space flex_direction_column p_2 w_33 p_relative">
+                    <img class="w_100" src="/assets/img/card (2).png" alt="">
+                    <div class="cardInfo w_100 d_flex flex flex_direction_column gap_1">
+                        <span>Fruits</span>
+                        <strong class="text4">Pomme</strong>
+                        <div class="starBox">
+                            <span class="star text_yellow text_3">&#9733;</span>
+                            <span class="star text_yellow text_3">&#9733;</span>
+                            <span class="star text_yellow text_3">&#9733;</span>
+                            <span class="star text_yellow text_3">&#9733;</span>
+                            <span class="star text_yellow text_3">&#9733;</span>
+                            <span class="star text_2">(1)</span>
+                        </div>
+                        <div class="pirceBox">
+                            <b class="text_3">175.00</b>
+                            <small class="text_1">DA</small>
+                            <del class="text_3">175.00 <small class="text_1">DA</small></del>
+                        </div>
+                        <div class="inputBox d_flex gap_1 w_80">
+                            <div class="sizeBox w_60">
+                                <label for="">Size:</label>
+                                <div class="p_relative">
+                                    <select class="p_1 rounded_1 w_100 mt_1 border_green name="" id="">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                                <small class=" p_h_center right_2">KG</small>
+                                </div>
+                            </div>
+                            <div class="quantityBox w_40">
+                                <label for="">Quantity:</label>
+                                <div class="p_relative">
+                                    <input class="p_1 rounded_1 w_100 mt_1 border_green text_center" type="number">
+                                    <small class="p_h_center right_1 pointer text_2">+</small>
+                                    <small class="p_h_center left_1  pointer text_2">-</small>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="cardBtn text_yellow text_green rounded_1 bg_yellow p_1 border_none">
+                            Add To Card &nbsp;
+                        </button>
+                        <span class="heart p_absolute text_4 top_1 right_2 ">
+                            &#9825;
+                        </span>
+                    </div>
+                </div>
+                <div
+                    class="cardItem text_green border_green rounded_2 d_flex align_items_center justify_content_space flex_direction_column p_2 w_33 p_relative">
+                    <img class="w_100" src="/assets/img/card (3).png" alt="">
+                    <div class="cardInfo w_100 d_flex flex flex_direction_column gap_1">
+                        <span>Fruits</span>
+                        <strong>Pomme</strong>
+                        <div class="starBox">
+                            <span class="star text_yellow text_3">&#9733;</span>
+                            <span class="star text_yellow text_3">&#9733;</span>
+                            <span class="star text_yellow text_3">&#9733;</span>
+                            <span class="star text_yellow text_3">&#9733;</span>
+                            <span class="star text_yellow text_3">&#9733;</span>
+                            <span class="star text_2">(1)</span>
+                        </div>
+                        <div class="pirceBox">
+                            <b class="text_3">175.00</b>
+                            <small class="text_1">DA</small>
+                            <del class="text_3">175.00 <small class="text_1">DA</small></del>
+                        </div>
+                        <div class="inputBox d_flex gap_1 w_80">
+                            <div class="sizeBox w_60">
+                                <label for="">Size:</label>
+                                <div class="p_relative">
+                                    <select class="p_1 rounded_1 w_100 mt_1 border_green name="" id="">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                                <small class=" p_h_center right_2 text_green">KG</small>
+                                </div>
+                            </div>
+                            <div class="quantityBox w_40">
+                                <label for="">Quantity:</label>
+                                <div class="p_relative">
+                                    <input class="p_1 rounded_1 w_100 mt_1 border_green text_center" type="number">
+                                    <small class="p_h_center right_1 pointer text_2 text_green">+</small>
+                                    <small class="p_h_center left_1  pointer text_2 text_green">-</small>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="cardBtn text_yellow text_green rounded_1 bg_yellow p_1 border_none">
+                            Add To Card &nbsp;
+                        </button>
+                        <span class="heart p_absolute text_4 top_1 right_2 text_yellow ">
+                            &hearts;
+                        </span>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- Best Offers Products -->
+        <section class="productIntro d_flex flex_direction_column align_items_center bg_green mt_5">
+            <div class="titleIntro w_70">
+                <strong class="txtTitle text_white">Love Our Categories</strong>
+                <button class="productBtn">Show More <img src="/assets/ico/arrow.png" alt=""></button>
+            </div>
+            <ul class="d_flex gap_2 list_style_none text_white p_2 w_70">
+                <li class="text_2 text_bold">All Categories</li>
+                <li class="text_2">Fruits </li>
+                <li class="text_2">Vagetables</li>
+                <li class="text_2">Discoutns</li>
+                <li class="text_2">Offers Event</li>
+            </ul>
+            <section class="cardSection d_flex justify_content_center gap_2 w_70 ">
+                <div
+                    class="cardItem mb_2 text_white border_white rounded_2 d_flex align_items_center justify_content_space flex_direction_column p_2 w_33 p_relative">
+                    <img class="w_100" src="/assets/img/card (1).png" alt="">
+                    <div class="cardInfo w_100 d_flex flex flex_direction_column gap_1">
+                        <span>Fruits</span>
+                        <strong>Pomme</strong>
+                        <div class="starBox">
+                            <span class="star text_yellow text_3">&#9733;</span>
+                            <span class="star text_yellow text_3">&#9733;</span>
+                            <span class="star text_yellow text_3">&#9733;</span>
+                            <span class="star text_yellow text_3">&#9733;</span>
+                            <span class="star text_yellow text_3">&#9733;</span>
+                            <span class="star text_2">(1)</span>
+                        </div>
+                        <div class="pirceBox">
+                            <b class="text_3">175.00</b>
+                            <small class="text_1">DA</small>
+                            <del class="text_3">175.00 <small class="text_1">DA</small></del>
+                        </div>
+                        <div class="inputBox d_flex gap_1 w_80">
+                            <div class="sizeBox w_60">
+                                <label for="">Size:</label>
+                                <div class="p_relative">
+                                    <select class="p_1 rounded_1 w_100 mt_1 border_white name="" id="">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                                <small class=" p_h_center right_2 text_green">KG</small>
+                                </div>
+                            </div>
+                            <div class="quantityBox w_40">
+                                <label for="">Quantity:</label>
+                                <div class="p_relative">
+                                    <input class="p_1 rounded_1 w_100 mt_1 border_white text_center" type="number">
+                                    <small class="p_h_center right_1 pointer text_2 text_green">+</small>
+                                    <small class="p_h_center left_1  pointer text_2 text_green">-</small>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="cardBtn text_yellow text_green rounded_1 bg_yellow p_1 border_none pointer">
+                            Add To Card &nbsp;
+                        </button>
+                        <span class="heart p_absolute text_4 top_1 right_2 ">
+                            &#9825;
+                        </span>
+                    </div>
+                </div>
+                <div
+                    class="cardItem mb_2 text_white border_white rounded_2 d_flex align_items_center justify_content_space flex_direction_column p_2 w_33 p_relative">
+                    <img class="w_100" src="/assets/img/card (2).png" alt="">
+                    <div class="cardInfo w_100 d_flex flex flex_direction_column gap_1">
+                        <span>Fruits</span>
+                        <strong class="text4">Pomme</strong>
+                        <div class="starBox">
+                            <span class="star text_yellow text_3">&#9733;</span>
+                            <span class="star text_yellow text_3">&#9733;</span>
+                            <span class="star text_yellow text_3">&#9733;</span>
+                            <span class="star text_yellow text_3">&#9733;</span>
+                            <span class="star text_yellow text_3">&#9733;</span>
+                            <span class="star text_2">(1)</span>
+                        </div>
+                        <div class="pirceBox">
+                            <b class="text_3">175.00</b>
+                            <small class="text_1">DA</small>
+                            <del class="text_3">175.00 <small class="text_1">DA</small></del>
+                        </div>
+                        <div class="inputBox d_flex gap_1 w_80">
+                            <div class="sizeBox w_60">
+                                <label for="">Size:</label>
+                                <div class="p_relative">
+                                    <select class="p_1 rounded_1 w_100 mt_1 border_white name="" id="">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                                <small class=" p_h_center right_2 text_green">KG</small>
+                                </div>
+                            </div>
+                            <div class="quantityBox w_40">
+                                <label for="">Quantity:</label>
+                                <div class="p_relative">
+                                    <input class="p_1 rounded_1 w_100 mt_1 border_white text_center" type="number">
+                                    <small class="p_h_center right_1 pointer text_2 text_green">+</small>
+                                    <small class="p_h_center left_1  pointer text_2 text_green">-</small>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="cardBtn text_yellow text_green rounded_1 bg_yellow p_1 border_none pointer">
+                            Add To Card &nbsp;
+                        </button>
+                        <span class="heart p_absolute text_4 top_1 right_2 text_yellow  ">
+                            &hearts;
+                        </span>
+                    </div>
+                </div>
+                <div
+                    class="cardItem mb_2 text_white border_white rounded_2 d_flex align_items_center justify_content_space flex_direction_column p_2 w_33 p_relative">
+                    <img class="w_100" src="/assets/img/card (3).png" alt="">
+                    <div class="cardInfo w_100 d_flex flex flex_direction_column gap_1">
+                        <span>Fruits</span>
+                        <strong>Pomme</strong>
+                        <div class="starBox">
+                            <span class="star text_yellow text_3">&#9733;</span>
+                            <span class="star text_yellow text_3">&#9733;</span>
+                            <span class="star text_yellow text_3">&#9733;</span>
+                            <span class="star text_yellow text_3">&#9733;</span>
+                            <span class="star text_yellow text_3">&#9733;</span>
+                            <span class="star text_2">(1)</span>
+                        </div>
+                        <div class="pirceBox">
+                            <b class="text_3">175.00</b>
+                            <small class="text_1">DA</small>
+                            <del class="text_3">175.00 <small class="text_1">DA</small></del>
+                        </div>
+                        <div class="inputBox d_flex gap_1 w_80">
+                            <div class="sizeBox w_60">
+                                <label for="">Size:</label>
+                                <div class="p_relative">
+                                    <select class="p_1 rounded_1 w_100 mt_1 border_white name="" id="">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                                <small class=" p_h_center right_2 text_green">KG</small>
+                                </div>
+                            </div>
+                            <div class="quantityBox w_40">
+                                <label for="">Quantity:</label>
+                                <div class="p_relative">
+                                    <input class="p_1 rounded_1 w_100 mt_1 border_white text_center" type="number">
+                                    <small class="p_h_center right_1 pointer text_2 text_green">+</small>
+                                    <small class="p_h_center left_1  pointer text_2 text_green">-</small>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="cardBtn text_green rounded_1 bg_yellow p_1 border_none pointer">
+                            Add To Card &nbsp;
+                        </button>
+                        <span class="heart p_absolute text_4 top_1 right_2 ">
+                            &#9825;
+                        </span>
+                    </div>
+                </div>
+            </section>
 
+        </section>
+        </section>
+        <section class="bg_white p_3 d_flex flex_direction_column align_items_center">
+            <div class="titleIntro">
+                <strong class="textTitleInt">Best Products</strong>
+                <button class="productBtn">
+                    <span>Show more</span>
+                    <img src="/assets/images/endProject/arrow.png" alt="">
+                </button>
+            </div>
+
+
+            <div class="d_flex justify_content_center gap_3 mt_3 w_70">
+                <div class="card_container p_relative bg_orange w_25 rounded_2 p_2">
+                    <div class="text_green text_2 text_bold mt_5">Juices</div>
+                    <div class="text_green text_3 text_bold">Broccoli Shake</div>
+                    <div class="text_green  text_2">★★★★★ (1)</div>
+                    <div class="text_white text_2">175.00 DA</div>
+                    <button class="cardBtn  text_green rounded_1 bg_yellow p_1 border_green gap_3">Add to Cart
+                        &nbsp;›</button>
+                    <img src="/assets/img/fruit (4).png" alt="Banana" class="card_image p_absolute w_60">
+                </div>
+                <div class="card_container p_relative bg_yellow w_25 rounded_2 p_2">
+                    <div class="text_green text_2 text_bold mt_5">Juices</div>
+                    <div class="text_green text_3 text_bold">Broccoli Shake</div>
+                    <div class="text_green  text_2">★★★★★ (1)</div>
+                    <div class="text_white text_2">175.00 DA</div>
+                    <button class="cardBtn  text_green rounded_1 bg_yellow p_1 border_green gap_3">Add to Cart
+                        &nbsp;›</button>
+                    <img src="/assets/img/fruit (1).png" alt="Banana" class="card_image p_absolute w_50">
+                </div>
+                <div class="card_container p_relative text_white bg_green w_25 rounded_2 p_2">
+                    <div class="text_2 text_bold mt_5">Juices</div>
+                    <div class="text_3 text_bold">Broccoli Shake</div>
+                    <div class=" text_2">★★★★★ (1)</div>
+                    <div class="text_white text_2">175.00 DA</div>
+                    <button class="cardBtn  text_green rounded_1 bg_yellow p_1 border_green gap_3">Add to Cart
+                        &nbsp;›</button>
+                    <img src="/assets/img/fruit (3).png" alt="Banana" class="card_image p_absolute w_60">
+                </div>
+                <div class="card_container p_relative bg_pink w_25 rounded_2 p_2">
+                    <div class="text_green text_2 text_bold mt_5">Juices</div>
+                    <div class="text_green text_3 text_bold">Broccoli Shake</div>
+                    <div class="text_green  text_2">★★★★★ (1)</div>
+                    <div class="text_white text_2">175.00 DA</div>
+                    <button class="cardBtn  text_green rounded_1 bg_yellow p_1 border_green gap_3">Add to Cart
+                        &nbsp;›</button>
+                    <img src="assets/img/fruit (2).png" alt="Banana" class="card_image p_absolute w_50">
+                </div>
             </div>
         </section>
-     </section>
+        <!-- bannerSection  -->
+        <section class=" d_flex gap_2 mt_3">
+            <div class="bannerBoxLeft">
+                <div class="w_70">
+                    <h1 class="text4 mt_1">Fruits § <br>
+                        Vagetables</h1>
+                    <p class="text_2 mt_1">These superfoods are packed with vital nutrients, including vitamins
+                        and minerals that can help keep you health. Plus, they’re easy to
+                        enjoy-just add water and let the magic happen!</p>
+                    <button class="btnBanner bg_yellow mt_1 text_green">
+                        <span>View More</span>
+                        <span> > </span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="bannerBoxRight">
+                <div class="w_70">
+                    <h1 class="text4 mt_1">Fruits § <br>
+                        Vagetables</h1>
+                    <p class="text_2 mt_1">These superfoods are packed with vital nutrients, including vitamins
+                        and minerals that can help keep you health. Plus, they’re easy to
+                        enjoy-just add water and let the magic happen!</p>
+                    <button class="btnBanner bg_yellow mt_1 text_green">
+                        <span>View More</span>
+                        <span> > </span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Opinions And Comments  -->
+
+        <section class="d_flex justify_content_center  mt_5 text_green">
+            <div class="d_flex justify_content_center w_70  align_items_ gap_4 ">
+
+                <div class="w_50 ">
+                    <h1 class="text_4 mt_1">Opinions and comments
+                    </h1>
+                    <p class="text_2 mt_1 text_justify">These superfoods are packed with vital nutrients, including
+                        vitamins
+                        and minerals that can help keep you health. Plus, they’re easy to
+                        enjoy-just add water and let the magic happen!
+                    </p>
+                    <button class="btnBanner bg_yellow mt_1 text_green">
+                        <span>View More</span>
+                        <span> > </span>
+                    </button>
+                </div>
+
+                <div class="w_50 d_flex gap_3">
+                    <div class="border_green rounded_1 p_2 p_relative">
+                        <div class="text_yellow  text_2 mt_1">★★★★★ <span class="text_green text_1">45/5</span></div>
+                        <div class="text_green text_2 text_bold mt_1">Excellent Service</div>
+                        <p class="text_justify mt_1 text_1">
+                            These superfoods are packed with vital nutrients, including vitamins
+                            and minerals that can help keep you health. Plus, they’re easy to
+                            enjoy-just add water and let the magic happen!
+                        </p>
+                        <div class="d_flex gap_1 align_items_center mt_2">
+                            <img class="w_30" src="/assets/img/Ellipse 1.png" alt="">
+                            <div>
+                                <b class="text_2">Mustapha kadi </b> <br>
+                                <small>Client</small>
+                            </div>
+                        </div>
+                        <img class="p_h_center left_m1 arrowIcon" src="/assets/img/Vector (1).png" alt="">
+                    </div>
+
+                    <div class="border_green rounded_1 p_2 p_relative">
+                        <div class="text_yellow  text_2 mt_1">★★★★★ <span class="text_green text_1">45/5</span></div>
+                        <div class="text_green text_2 text_bold mt_1">Excellent Service</div>
+                        <p class="text_justify mt_1 text_1">
+                            These superfoods are packed with vital nutrients, including vitamins
+                            and minerals that can help keep you health. Plus, they’re easy to
+                            enjoy-just add water and let the magic happen!
+                        </p>
+                        <div class="d_flex gap_1 align_items_center mt_2">
+                            <img class="w_30" src="/assets/img/Ellipse 2.png" alt="">
+                            <div>
+                                <b class="text_2">Mustapha kadi </b> <br>
+                                <small>Client</small>
+                            </div>
+                        </div>
+                        <img class="p_h_center right_m1 arrowIcon" src="/assets/img/Vector (2).png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog & Article  -->
+
+        <section class="d_flex text_green flex_direction_column mt_3 gap_3 align_items_center">
+            <div class="articlestitleBox d_flex flex_direction_column align_items_center">
+                <h2 class="text_4">Blog § Article</h2>
+                <p class="w_60 text_center">These superfoods are packed with vital nutrients, including vitamins and
+                    minerals
+                    that can help keep youhealth. Plus, they’re easy to enjoy-just add water and let the magic happen!
+                </p>
+            </div>
+
+            <div class="articleSection w_70 d_flex justify_content_center gap_4">
+                <div class="articleBox bg_white w_33 rounded_1 ">
+                    <img class="cardImg" src="/assets/img/blog (1).png" alt="">
+                    <div class="articleInformation p_2 mt_2 d_flex flex_direction_column gap_2 ">
+                        <h4 class="text_3">Fruit is an Essential food for our life</h4>
+                        <p>These superfoods are packed with vital nutrients, including vitamins and minerals that can
+                            help
+                            keep you
+                            health. Plus, they’re easy to enjoy-just add water and let the magic happen!
+                        </p>
+                        <button class="w_80 bg_yellow text_2 d_flex gap_3 rounded_1 p_1 justify_content_center ">
+                            <span>Read More</span>
+                            <img src="/assets/images/endProject/arrow.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="articleBox bg_white w_33 rounded_1 ">
+                    <img class="cardImg" src="/assets/img/blog (2).png" alt="">
+                    <div class="articleInformation p_2 mt_2 d_flex flex_direction_column gap_2 ">
+                        <h4 class="text_3">Fruit is an Essential food for our life</h4>
+                        <p>These superfoods are packed with vital nutrients, including vitamins and minerals that can
+                            help
+                            keep you
+                            health. Plus, they’re easy to enjoy-just add water and let the magic happen!
+                        </p>
+                        <button class="w_80 bg_yellow text_2 d_flex gap_3 rounded_1 p_1 justify_content_center ">
+                            <span>Read More</span>
+                            <img src="/assets/images/endProject/arrow.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="articleBox bg_white w_33 rounded_1 ">
+                    <img class="cardImg" src="/assets/img/blog (3).png" alt="">
+                    <div class="articleInformation p_2 mt_2 d_flex flex_direction_column gap_2 ">
+                        <h4 class="text_3">Fruit is an Essential food for our life</h4>
+                        <p>These superfoods are packed with vital nutrients, including vitamins and minerals that can
+                            help
+                            keep you
+                            health. Plus, they’re easy to enjoy-just add water and let the magic happen!
+                        </p>
+                        <button class="w_80 bg_yellow text_2 d_flex gap_3 rounded_1 p_1 justify_content_center ">
+                            <span>Read More</span>
+                            <img src="/assets/images/endProject/arrow.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- Footer  -->
+
+    <main>
+        <footer class="bg_green p_relative d_flex flex_direction_column align_items_center">
+            <div class="footerbackgroundBox"></div>
+
+            <section class="footerSection text_white d_flex justify_content_center gap_3 w_70 p_2 mt_5">
+                <div class="w_35 ">
+                    <h3 class="text_yellow">Foodmart</h3>
+                    <p class="mt_2">These superfoods are packed with vital nutrients, including vitamins and
+                        minerals
+                        that can help keep youhealth. Plus, they’re easy to enjoy-just add water and let the magic
+                        happen!
+                    </p>
+                </div>
+
+                <ul class="w_15 list_style_none line_height_2">
+                    <li><strong>Navigation</strong></li>
+                    <li class="mt_2">search</li>
+                    <li>categories</li>
+                    <li>My Cart</li>
+                    <li>wishlist</li>
+                </ul>
+                <ul class="w_15 list_style_none line_height_2">
+                    <li><strong>Navigation</strong></li>
+                    <li class="mt_2">search</li>
+                    <li>My Cart</li>
+                    <li>categories</li>
+                    <li>wishlist</li>
+                    <li>wishlist</li>
+                </ul>
+                <div class="w_35 ">
+                    <h3>Foodmart</h3>
+                    <p class="mt_2">These superfoods are packed with vital nutrients, including vitamins and
+                        minerals
+                        that
+                        can help keep youhealth. Plus, they’re easy to enjoy-just add water and let the magic
+                        happen!
+                    </p>
+                    <div class="emailbox border_white d_flex ">
+                        <input class="border_none bg_transparent w_80 text_center " placeholder="Enter email address..."
+                            type="email">
+                        <a href="#" class="bg_yellow p_inline_1 text_3 text_green pointer">→</a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="bottomFooter w_70 d_flex justify_content_space p_3 text_white">
+                <span>2024,All Right Reserved</span>
+                <span>Made by <span class="text_yellow">Hadj cadi Mustapha</span></span>
+
+            </div>
+        </footer>
+    </main>
+    <!-- Scroll to Top Button -->
+    <a class="topScroll z_index1" href="#header">
+        ⇪
+    </a>
 
 </body>
 
