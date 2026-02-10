@@ -329,11 +329,11 @@ body {
 }
 
 .bannerBoxRight {
-  background: url("assets/img/clem.png") center / cover, no-repeat, rgba(0, 0, 0, 0.464);
+  background: url("../assets/img/clem.png") center / cover, no-repeat, rgba(0, 0, 0, 0.464);
 }
 
 .bannerBoxLeft {
-  background: url("assets/img/clem (1).png") center / cover, no-repeat, rgba(0, 0, 0, 0.464);
+  background: url("../assets/img/clem-2.png") center / cover, no-repeat, rgba(0, 0, 0, 0.464);
 }
 
 .arrowIcon {
