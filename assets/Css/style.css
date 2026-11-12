@@ -2,7 +2,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  transition: all 1s;
+}
+
+html { 
   scroll-behavior: smooth;
 }
 
@@ -28,7 +30,7 @@ body {
   background: #0A490A;
   border-bottom: 2px solid #003500;
   font-size: 1.5rem;
-  font-weight: bolrder;
+  font-weight: bolder;
 }
 
 
@@ -117,7 +119,7 @@ body {
 .mobileSection:target {
   width: 80%;
   padding: 1.5rem;
-  opacity: 100;
+  opacity: 1;
 }
 
 .head-section {
@@ -164,7 +166,7 @@ body {
   left: 100px;
   font-size: 70px;
   line-height: 70px;
-  letter-spacing: 1%;
+  letter-spacing: 0.01em;
 }
 
 .poster .discount-section p {
@@ -176,7 +178,7 @@ body {
   left: 100px;
   font-size: 22px;
   line-height: 132%;
-  letter-spacing: -4%;
+  letter-spacing: -0.04em;
 }
 
 .poster .discount-section .btn {
@@ -327,11 +329,15 @@ body {
 }
 
 .bannerBoxRight {
-  background: url("../img/clem.png") center / cover, no-repeat, rgba(0, 0, 0, 0.464);
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.464), rgba(0, 0, 0, 0.464)),
+    url("../img/clem.png") center / cover no-repeat;
 }
 
 .bannerBoxLeft {
-  background: url("../img/clem1.png") center / cover, no-repeat, rgba(0, 0, 0, 0.464);
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.464), rgba(0, 0, 0, 0.464)),
+    url("../img/clem1.png") center / cover no-repeat;
 }
 
 .arrowIcon {
