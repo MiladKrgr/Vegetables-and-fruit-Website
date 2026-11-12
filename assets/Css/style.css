@@ -255,8 +255,6 @@ body {
   object-fit: cover;
 }
 
-
-
 /* Product InforMation */
 
 .productInfo {
@@ -380,6 +378,7 @@ body {
 }
 
 /* footer style  */
+
 .footerbackgroundBox {
   height: 20rem;
   width: 100%;
@@ -739,6 +738,11 @@ body {
   right: -2rem;
 }
 
+/* Clasess Based On Styles Ends */
+
+
+/* Media Queries For Responsive */
+
 @media (max-width : 768px) {
   .d_flex {
     flex-wrap: wrap;
@@ -799,4 +803,3 @@ body {
   }
 }
 
-/* Clasess Based On Styles Ends */
