@@ -206,6 +206,32 @@ body {
   display: inline;
 }
 
+.discount {
+  color: #0A490A;
+  background-color: #B4C8B1;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: bolder;
+}
+
+.btn {
+  color: #0A490A;
+  background-color: #B4C8B1;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.btn:hover {
+  filter: brightness(0.95);
+  /* یا یک تغییر ریز برای حس کلیک‌شدن */
+  transform: translateY(-1px);
+}
 
 .titleIntro {
   display: flex;
@@ -496,6 +522,14 @@ body {
   align-items: start;
 }
 
+.align_self_start {
+  align-self: flex-start;
+}
+
+.align_self_end {
+  align-self: flex-end;
+}
+
 .justify_content_center {
   justify-content: center;
 }
@@ -641,6 +675,26 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.m_b_m2 {
+  margin-bottom: -1rem;
+  /* به اندازه همون پدینگ پوستر به سمت پایین کشیده می‌شه */
+}
+
+/* یا اگر می‌خوای بیشتر بیرون بزنه */
+.m_b_m4 {
+  margin-bottom: -2rem;
+}
+
+.m_b_m4 {
+  margin-bottom: -2rem;
+  /* یا هر پیکسلی که انداختی */
+}
+
+.translate_y_4 {
+  transform: translateY(6rem);
+  /* یا مقداری که دقیقاً تست کردی */
+}
+
 .w_20 {
   width: 20%;
 }
@@ -696,6 +750,11 @@ body {
 
 .h_100vh {
   height: 100dvh;
+}
+
+.h_poster {
+  min-height: 450px;
+  /* یا مقداری که برای بنر مناسبه */
 }
 
 .p_relative {
