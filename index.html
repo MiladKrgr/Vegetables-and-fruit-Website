@@ -16,23 +16,24 @@
     <!-- Header Section  -->
 
     <header id="header">
-        <section class="shoar w_100  text_yellow p_1
+        <section class="w_100  text_yellow p_1
         d_flex justify_content_center align_items_center
         bg_green border_bt_bg_green text_2 text_bold">
             <p>“Fresh from nature, every single day”</p>
         </section>
         <!-- NavBar Section  -->
-        <nav class="nav-bar">
+        <nav class=" bg_green d_flex justify_content_evenly
+        align_items_center text_white p_2">
             <section class="w_60 d_desktop_none">
                 <a href="#mobileSection"><img class="w_20" src="/assets/images/svg/menu-alt-svgrepo-com.svg" alt=""></a>
             </section>
             <h1>FOODMART</h1>
-            <ul class="menu">
+            <ul class="d_flex gap_4 list_style_none">
                 <li>Home</li>
                 <li>Fruits</li>
                 <li>Vegetables</li>
             </ul>
-            <div class="searchBox">
+            <div class="searchBox h_4 p_relative d_flex">
                 <input type="text" placeholder="Search Products">
                 <select>
                     <option value="">Select Categories</option>
@@ -43,13 +44,18 @@
                     <option value="">Grapes</option>
                     <option value="">Blueberry</option>
                 </select>
-                <img src="assets/ico/🦆 icon _search icon_ (1).png" alt="">
+                <img class="p_absolute left_1 top_1 h_85" src="assets/ico/🦆 icon _search icon_ (1).png" alt="">
             </div>
-            <section class="operation">
-                <div class="iconBox"><img src="assets/ico/Group.png" alt=""><label for="">Profile</label></div>
-                <div class="iconBox"><img src="assets/ico/🦆 icon _hurt_.png" alt=""><label for="">WishList</label>
+            <section class="d_flex gap_2">
+                <div class="d_flex flex_direction_column justify_content_between
+                align_items_center h_6 text_1"><img class="transform_06" src="assets/ico/Group.png" alt=""><label for="">Profile</label>
                 </div>
-                <div class="iconBox"><img src="assets/ico/🦆 icon _shopping-cart_.png" alt=""><label
+                <div class="d_flex flex_direction_column justify_content_between
+                align_items_center h_6 text_1"><img class="transform_06" src="assets/ico/🦆 icon _hurt_.png" alt=""><label
+                        for="">WishList</label>
+                </div>
+                <div class="d_flex flex_direction_column justify_content_between
+                align_items_center h_6 text_1"><img class="transform_06" src="assets/ico/🦆 icon _shopping-cart_.png" alt=""><label
                         for="">Shopping</label></div>
             </section>
             <!-- NavBar Section Ends  -->
