@@ -20,17 +20,8 @@ body {
   min-height: 100vh;
 }
 
-.shoar {
-  width: 100%;
-  height: 30px;
-  color: #FFC107;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #0A490A;
+.border_bt_bg_green{ 
   border-bottom: 2px solid #003500;
-  font-size: 1.5rem;
-  font-weight: bolder;
 }
 
 
