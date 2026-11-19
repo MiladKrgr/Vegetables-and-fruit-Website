@@ -20,7 +20,7 @@ body {
   min-height: 100vh;
 }
 
-.border_bt_bg_green{ 
+.border_bt_bg_green {
   border-bottom: 2px solid #003500;
 }
 
@@ -30,41 +30,19 @@ body {
 /* Header NavBar Section */
 
 
-.searchBox {
-  height: 2rem;
-  position: relative;
-  display: flex;
-}
-
-.searchBox img {
-  position: absolute;
-  left: 5px;
-  top: 3px;
-  height: 85%;
-}
-
-.searchBox select,
-.searchBox input {
-  height: 100%;
-  background: transparent;
+.color_inherit {
   color: inherit;
-  padding-inline: 1rem;
-  border: 1px solid #FFFFFF;
-  text-align: center;
 }
 
-.searchBox select option {
-  color: black;
-}
+   .outline_none:focus {
+     outline: none;
+   }
 
-.operation {
-  display: flex;
-  gap: 1.5rem;
-}
 
 .transform_06 {
   transform: scale(0.6);
 }
+
 .mobileSection {
   width: 0;
   color: white;
@@ -103,6 +81,10 @@ body {
 
 .bg_gray {
   background-color: #B4C8B1;
+}
+
+.text_black {
+  color: #000000;
 }
 
 .d_inline {
@@ -551,6 +533,10 @@ body {
   padding-inline: 0.5rem;
 }
 
+.p_inline_2 {
+  padding-inline: 1rem;
+}
+
 .p_inline_3 {
   padding-inline: 2rem;
 }
@@ -692,7 +678,7 @@ body {
   height: 2rem;
 }
 
-.h_6{
+.h_6 {
   height: 3rem;
 }
 
@@ -701,8 +687,12 @@ body {
   /* دقیقاً معادل w_8 */
 }
 
-.h_85 {
+.h_85{
   height: 85%;
+}
+
+.h_90 {
+  height: 90%;
 }
 
 .h_100 {
