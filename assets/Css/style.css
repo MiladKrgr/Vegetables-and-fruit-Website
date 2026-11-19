@@ -1,3 +1,5 @@
+/* Reset & Global Styles */
+
 * {
   padding: 0;
   margin: 0;
@@ -12,93 +14,20 @@ li {
   cursor: pointer;
 }
 
-/* Whole Body section */
-
 body {
   background-color: white;
   width: 100%;
   min-height: 100vh;
 }
 
-.border_bt_bg_green {
-  border-bottom: 2px solid #003500;
-}
-
-
-/* Whole Body Section Ends  */
-
-/* Header NavBar Section */
-
-
-.color_inherit {
-  color: inherit;
-}
-
-   .outline_none:focus {
-     outline: none;
-   }
-
+/* Layout & Positioning */
 
 .transform_06 {
   transform: scale(0.6);
 }
 
-.mobileSection {
-  width: 0;
-  color: white;
-  height: 100dvh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  background-color: #0A490A;
-  transition: all 500ms;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  opacity: 0;
-}
-
-.mobileSection:target {
-  width: 80%;
-  padding: 1.5rem;
-  opacity: 1;
-}
-
-.head-section {
-  width: 100%;
-  height: 550px;
-  background-color: #FF07A0;
-}
-
-/* header NavBar Section Ends  */
-
-
-.text_green {
-  color: #0A490A;
-}
-
-.bg_gray {
-  background-color: #B4C8B1;
-}
-
-.text_black {
-  color: #000000;
-}
-
 .d_inline {
   display: inline;
-}
-
-.discount {
-  color: #0A490A;
-  background-color: #B4C8B1;
-  padding: 0.5rem 2rem;
-  border: none;
-  border-radius: 10px;
-  font-size: 0.9rem;
-  font-weight: bolder;
 }
 
 .btn {
@@ -112,227 +41,16 @@ body {
   cursor: pointer;
 }
 
-.btn:hover {
-  filter: brightness(0.95);
-  /* یا یک تغییر ریز برای حس کلیک‌شدن */
-  transform: translateY(-1px);
-}
-
-.titleIntro {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-  width: 100%;
-  padding: 0 40px 0 40px;
-}
-
-.titleIntro strong {
-  font-size: 2.5rem;
-  color: #003500;
-}
-
-
-.productSection {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.productItems {
-  width: 23%;
-  border-radius: 1rem;
-  overflow: hidden;
-  position: relative;
-  color: #FFFFFF;
-}
-
-.productImg {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Product InforMation */
-
-.productInfo {
-  position: absolute;
-  bottom: 0;
-  padding: 0.8rem;
-  z-index: 1;
-}
-
-.productInfo h4 {
-  color: #FFC107;
-}
-
-.productInfo p {
-  font-size: 0.7rem;
-  margin-bottom: .5rem;
-}
-
-.productInfo button,
-.productBtn {
-  background: #FFC107;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-  font-size: .7rem;
-  padding: .5rem .5rem;
-  border-radius: 0.5rem;
-  color: #0A490A;
-  font-weight: bolder;
-  border: none;
-  cursor: pointer;
-}
-
-.productInfo img,
-.productBtn img {
-  width: .5rem;
-
-}
-
-/* برای اینکه عکس از کارت بیرون نزند */
 .overflow_hidden {
   overflow: hidden;
 }
 
-/* برای اینکه عکس دفرمه نشود و فیت باکس بماند */
 .object_cover {
   object-fit: cover;
 }
 
-/* برای محتوای متنی کارت که بچسبد پایین */
 .bottom_0 {
   bottom: 0;
-}
-
-/* برای لایه‌ی تاریک و متن روی عکس که زیر کارت نمانند */
-.z_1 {
-  z-index: 1;
-}
-
-
-/* افکت تاریک شدن و ترنزیشن روی کارت */
-.productCover {
-  background: rgba(0, 0, 0, 0.616);
-  transition: all 0.4s ease-in-out;
-}
-
-.productItems:hover .productCover {
-  background: rgba(0, 0, 0, 0.15);
-}
-
-/* استایل دکمه کوچک زیر هر محصول */
-.productBtnSmall {
-  background: #FFC107;
-  color: #0A490A;
-  border-radius: 0.5rem;
-  border: none;
-  cursor: pointer;
-}
-
-
-/* Product InforMation Ends  */
-
-.productCover {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.616);
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  transition: all 0.5s ease-in-out;
-}
-
-.productCover:hover {
-  background: rgba(0, 0, 0, 0.11);
-}
-
-/* Cards Section */
-
-/* Main Banner Section  */
-
-.bannerBoxRight,
-.bannerBoxLeft {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-blend-mode: overlay;
-  padding: 7rem 0 2rem 0;
-  color: white;
-}
-
-.bannerBoxRight {
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.464), rgba(0, 0, 0, 0.464)),
-    url("../img/clem.png") center / cover no-repeat;
-}
-
-.bannerBoxLeft {
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.464), rgba(0, 0, 0, 0.464)),
-    url("../img/clem1.png") center / cover no-repeat;
-}
-
-.arrowIcon {
-  width: 1rem;
-}
-
-.btnBanner {
-  font-size: 1rem;
-  padding: 0.3rem 1.5rem;
-  border-radius: 0.5rem;
-  background-color: #B4C8B1;
-  font-weight: bolder;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  border: none;
-  color: inherit;
-}
-
-.topScroll {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  right: 1rem;
-  bottom: 1rem;
-  color: #003500;
-  opacity: 30%;
-  transition: all 1s;
-  outline: 2px solid #003500;
-  outline-offset: 2px;
-  font-size: 1.5rem;
-}
-
-.topScroll:hover {
-  opacity: 100%;
-  box-shadow: 0 0 1rem #003500;
-  background-color: #003500;
-  color: white;
-}
-
-/* footer style  */
-
-.footerbackgroundBox {
-  height: 20rem;
-  width: 100%;
-  position: absolute;
-  top: -20rem;
-  background-color: #0A490A;
-  z-index: -1;
 }
 
 .emailbox {
@@ -340,100 +58,6 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
-}
-
-/* Clasess Based On Styles  */
-
-.bg_white {
-  background-color: #FFFFFF;
-}
-
-.bg_green {
-  background-color: #0A490A;
-}
-
-.bg_yellow {
-  background-color: #FFC107;
-}
-
-.bg_orange {
-  background-color: #E46002;
-}
-
-.bg_pink {
-  background-color: #EF174B;
-}
-
-.bg_transparent {
-  background-color: transparent;
-}
-
-.text_white {
-  color: #FFFFFF !important;
-}
-
-.text_yellow {
-  color: #FFC107;
-}
-
-.text_green {
-  color: #0A490A;
-}
-
-.text_1 {
-  font-size: .7rem;
-}
-
-.text_2 {
-  font-size: 1rem;
-}
-
-.text_3 {
-  font-size: 1.5rem;
-}
-
-.text_4 {
-  font-size: 2rem;
-}
-
-.text_5 {
-  font-size: 3rem;
-}
-
-.text_6 {
-  font-size: 4rem;
-}
-
-.text_bold {
-  font-weight: bolder;
-}
-
-.text_center {
-  text-align: center;
-}
-
-.text_justify {
-  text-align: justify;
-}
-
-.border_white {
-  border: 2px solid #fff;
-}
-
-.border_green {
-  border: 2px solid #0A490A;
-}
-
-.border_none {
-  border: none;
-}
-
-.rounded_1 {
-  border-radius: 0.5rem;
-}
-
-.rounded_2 {
-  border-radius: 1rem;
 }
 
 .d_flex {
@@ -454,6 +78,10 @@ body {
 
 .align_self_end {
   align-self: flex-end;
+}
+
+.align_items_baseline{
+  align-items: baseline;
 }
 
 .justify_content_center {
@@ -486,6 +114,315 @@ body {
 
 .gap_5 {
   gap: 3rem;
+}
+
+.translate_y_4 {
+  transform: translateY(6rem);
+  /* یا مقداری که دقیقاً تست کردی */
+}
+
+.p_relative {
+  position: relative;
+}
+
+.p_absolute {
+  position: absolute;
+}
+
+.p_fixed {
+  position: fixed;
+}
+
+.p_sticky {
+  position: sticky;
+  top: 0;
+}
+
+.p_h_center {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+}
+
+.top_0 {
+  top: 0;
+}
+
+.top_1 {
+  top: 0.5rem;
+}
+
+.top_2 {
+  top: 1rem;
+}
+
+.top_3 {
+  top: 1.5rem;
+}
+
+.right_0 {
+  right: 0;
+}
+
+.right_1 {
+  right: 0.5rem;
+}
+
+.right_2 {
+  right: 1rem;
+}
+
+.right_3 {
+  right: 1.5rem;
+}
+
+.bottom_0 {
+  bottom: 0;
+}
+
+.bottom_1 {
+  bottom: 0.5rem;
+}
+
+.left_0 {
+  left: 0;
+}
+
+.left_1 {
+  left: 0.5rem;
+}
+
+.left_2 {
+  left: 1rem;
+}
+
+.left_3 {
+  left: 1.5rem;
+}
+
+.top_m1 {
+  top: -0.5rem;
+}
+
+.top_m2 {
+  top: -1rem;
+}
+
+.right_m1 {
+  right: -0.5rem;
+}
+
+.right_m2 {
+  right: -1rem;
+}
+
+.left_m1 {
+  left: -0.5rem;
+}
+
+.left_m2 {
+  left: -1rem;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.list_style_none {
+  list-style-type: none;
+}
+
+.text_decoration_none {
+  text-decoration: none;
+}
+
+.d_desktop_none {
+  display: none !important;
+}
+
+.card_image {
+  top: -2rem;
+  right: -2rem;
+}
+
+/* Sizing */
+
+.w_20 {
+  width: 20%;
+}
+
+.w_15 {
+  width: 15%;
+}
+
+.w_23 {
+  width: 23%;
+}
+
+.w_25 {
+  width: 25%;
+}
+
+.w_30 {
+  width: 30%;
+}
+
+.w_33 {
+  width: 33%;
+}
+
+.w_40 {
+  width: 40%;
+}
+
+.w_60 {
+  width: 60%;
+}
+
+.w_70 {
+  width: 70%;
+}
+
+.w_80 {
+  width: 80%;
+}
+
+.w_50 {
+  width: 50%;
+}
+
+.w_100 {
+  width: 100%;
+}
+
+.h_4 {
+  height: 2rem;
+}
+
+.h_6 {
+  height: 3rem;
+}
+
+.h_8 {
+  height: 4rem;
+  /* دقیقاً معادل w_8 */
+}
+
+.h_550 {
+  height: 550px;
+}
+
+.h_85 {
+  height: 85%;
+}
+
+.h_90 {
+  height: 90%;
+}
+
+.h_100 {
+  height: 100%;
+}
+
+.h_100vh {
+  height: 100dvh;
+}
+
+.h_poster {
+  min-height: 450px;
+  /* یا مقداری که برای بنر مناسبه */
+}
+
+.w_0 {
+  width: 0%;
+}
+
+.w_25 {
+  width: 25%;
+}
+
+.w_33 {
+  width: 33.333%;
+}
+
+.w_50 {
+  width: 50%;
+}
+
+.w_66 {
+  width: 66.666%;
+}
+
+.w_75 {
+  width: 75%;
+}
+
+.w_100 {
+  width: 100%;
+}
+
+.w_auto {
+  width: auto;
+}
+
+.w_1 {
+  width: 0.5rem;
+}
+
+.w_2 {
+  width: 1rem;
+}
+
+.w_3 {
+  width: 1.5rem;
+}
+
+.w_4 {
+  width: 2rem;
+}
+
+.w_5 {
+  width: 2.5rem;
+}
+
+.w_6 {
+  width: 3rem;
+}
+
+.w_8 {
+  width: 4rem;
+}
+
+.w_10 {
+  width: 5rem;
+}
+
+.w_12 {
+  width: 6rem;
+}
+
+.w_screen {
+  width: 100vw;
+}
+
+.w_min {
+  width: min-content;
+}
+
+.w_max {
+  width: max-content;
+}
+
+/* Spacing */
+
+.discount {
+  color: #0A490A;
+  background-color: #B4C8B1;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: bolder;
 }
 
 .p_1 {
@@ -610,7 +547,6 @@ body {
   /* به اندازه همون پدینگ پوستر به سمت پایین کشیده می‌شه */
 }
 
-/* یا اگر می‌خوای بیشتر بیرون بزنه */
 .m_b_m4 {
   margin-bottom: -2rem;
 }
@@ -620,199 +556,138 @@ body {
   /* یا هر پیکسلی که انداختی */
 }
 
-.translate_y_4 {
-  transform: translateY(6rem);
-  /* یا مقداری که دقیقاً تست کردی */
+/* Typography */
+
+.text_1 {
+  font-size: .7rem;
 }
 
-.w_20 {
-  width: 20%;
+.text_2 {
+  font-size: 1rem;
 }
 
-.w_15 {
-  width: 15%;
+.text_3 {
+  font-size: 1.5rem;
 }
 
-.w_23 {
-  width: 23%;
+.text_4 {
+  font-size: 2rem;
 }
 
-
-.w_25 {
-  width: 25%;
+.text_5 {
+  font-size: 3rem;
 }
 
-.w_30 {
-  width: 30%;
+.text_6 {
+  font-size: 4rem;
 }
 
-.w_33 {
-  width: 33%;
+.text_bold {
+  font-weight: bolder;
 }
 
-.w_40 {
-  width: 40%;
+.text_center {
+  text-align: center;
 }
 
-.w_60 {
-  width: 60%;
+.text_justify {
+  text-align: justify;
 }
 
-.w_70 {
-  width: 70%;
+.line_height_2 {
+  line-height: 2rem;
 }
 
-.w_80 {
-  width: 80%;
+/* Colors & Backgrounds */
+
+.color_inherit {
+  color: inherit;
 }
 
-.w_50 {
-  width: 50%;
+.text_green {
+  color: #0A490A;
 }
 
-.w_100 {
-  width: 100%;
+.bg_gray {
+  background-color: #B4C8B1;
 }
 
-.h_4 {
-  height: 2rem;
+.bg_hero_pink {
+  background-color: #FF07A0;
 }
 
-.h_6 {
-  height: 3rem;
+.text_black {
+  color: #000000;
 }
 
-.h_8 {
-  height: 4rem;
-  /* دقیقاً معادل w_8 */
+.bg_white {
+  background-color: #FFFFFF;
 }
 
-.h_85{
-  height: 85%;
+.bg_green {
+  background-color: #0A490A;
 }
 
-.h_90 {
-  height: 90%;
+.bg_yellow {
+  background-color: #FFC107;
 }
 
-.h_100 {
-  height: 100%;
+.bg_orange {
+  background-color: #E46002;
 }
 
-.h_100vh {
-  height: 100dvh;
+.bg_pink {
+  background-color: #EF174B;
 }
 
-.h_poster {
-  min-height: 450px;
-  /* یا مقداری که برای بنر مناسبه */
+.bg_transparent {
+  background-color: transparent;
 }
 
-.p_relative {
-  position: relative;
+.text_white {
+  color: #FFFFFF !important;
 }
 
-.p_absolute {
-  position: absolute;
+.text_yellow {
+  color: #FFC107;
 }
 
-.p_fixed {
-  position: fixed;
+.text_green {
+  color: #0A490A;
 }
 
-.p_sticky {
-  position: sticky;
-  top: 0;
+/* Borders & Effects */
+
+.border_bt_bg_green {
+  border-bottom: 2px solid #003500;
 }
 
-.p_h_center {
-  position: absolute;
-  top: 50%;
-  transform: translatey(-50%);
+#mobileSection {
+  transition: all 500ms;
 }
 
-.top_0 {
-  top: 0;
+.z_1 {
+  z-index: 1;
 }
 
-.top_1 {
-  top: 0.5rem;
+.border_white {
+  border: 2px solid #fff;
 }
 
-.top_2 {
-  top: 1rem;
+.border_green {
+  border: 2px solid #0A490A;
 }
 
-.top_3 {
-  top: 1.5rem;
+.border_none {
+  border: none;
 }
 
-/* --- Right --- */
-.right_0 {
-  right: 0;
+.rounded_1 {
+  border-radius: 0.5rem;
 }
 
-.right_1 {
-  right: 0.5rem;
-}
-
-.right_2 {
-  right: 1rem;
-}
-
-.right_3 {
-  right: 1.5rem;
-}
-
-/* --- Bottom --- */
-.bottom_0 {
-  bottom: 0;
-}
-
-.bottom_1 {
-  bottom: 0.5rem;
-}
-
-/* --- Left --- */
-.left_0 {
-  left: 0;
-}
-
-.left_1 {
-  left: 0.5rem;
-}
-
-.left_2 {
-  left: 1rem;
-}
-
-.left_3 {
-  left: 1.5rem;
-}
-
-/* --- Negative Offsets (مقادیر منفی برای بیرون زدن المان مثل بج تخفیف) --- */
-.top_m1 {
-  top: -0.5rem;
-}
-
-.top_m2 {
-  top: -1rem;
-}
-
-.right_m1 {
-  right: -0.5rem;
-}
-
-.right_m2 {
-  right: -1rem;
-}
-
-.left_m1 {
-  left: -0.5rem;
-}
-
-.left_m2 {
-  left: -1rem;
+.rounded_2 {
+  border-radius: 1rem;
 }
 
 .z_index1 {
@@ -827,24 +702,208 @@ body {
   z-index: -1;
 }
 
-.pointer {
+/* Component-specific styles */
+
+.outline_none:focus {
+  outline: none;
+}
+
+#mobileSection:target {
+  width: 80%;
+  padding: 1.5rem;
+  opacity: 1;
+}
+
+.btn:hover {
+  filter: brightness(0.95);
+  /* یا یک تغییر ریز برای حس کلیک‌شدن */
+  transform: translateY(-1px);
+}
+
+.titleIntro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0 40px 0 40px;
+}
+
+.titleIntro strong {
+  font-size: 2.5rem;
+  color: #003500;
+}
+
+.productSection {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.productItems {
+  width: 23%;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  color: #FFFFFF;
+}
+
+.productImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.productInfo {
+  position: absolute;
+  bottom: 0;
+  padding: 0.8rem;
+  z-index: 1;
+}
+
+.productInfo h4 {
+  color: #FFC107;
+}
+
+.productInfo p {
+  font-size: 0.7rem;
+  margin-bottom: .5rem;
+}
+
+.productInfo button,
+.productBtn {
+  background: #FFC107;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: .7rem;
+  padding: .5rem .5rem;
+  border-radius: 0.5rem;
+  color: #0A490A;
+  font-weight: bolder;
+  border: none;
   cursor: pointer;
 }
 
-.list_style_none {
-  list-style-type: none;
+.productInfo img,
+.productBtn img {
+  width: .5rem;
+
 }
 
-.text_decoration_none {
-  text-decoration: none;
+.productCover {
+  background: rgba(0, 0, 0, 0.616);
+  transition: all 0.4s ease-in-out;
+}
+
+.productItems:hover .productCover {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.productBtnSmall {
+  background: #FFC107;
+  color: #0A490A;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.productCover {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.616);
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  transition: all 0.5s ease-in-out;
+}
+
+.productCover:hover {
+  background: rgba(0, 0, 0, 0.11);
+}
+
+.bannerBoxRight,
+.bannerBoxLeft {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-blend-mode: overlay;
+  padding: 7rem 0 2rem 0;
+  color: white;
+}
+
+.bannerBoxRight {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.464), rgba(0, 0, 0, 0.464)),
+    url("../img/clem.png") center / cover no-repeat;
+}
+
+.bannerBoxLeft {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.464), rgba(0, 0, 0, 0.464)),
+    url("../img/clem1.png") center / cover no-repeat;
+}
+
+.arrowIcon {
+  width: 1rem;
+}
+
+.btnBanner {
+  font-size: 1rem;
+  padding: 0.3rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #B4C8B1;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border: none;
+  color: inherit;
+}
+
+.topScroll {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  color: #003500;
+  opacity: 30%;
+  transition: all 1s;
+  outline: 2px solid #003500;
+  outline-offset: 2px;
+  font-size: 1.5rem;
+}
+
+.topScroll:hover {
+  opacity: 100%;
+  box-shadow: 0 0 1rem #003500;
+  background-color: #003500;
+  color: white;
+}
+
+.footerbackgroundBox {
+  height: 20rem;
+  width: 100%;
+  position: absolute;
+  top: -20rem;
+  background-color: #0A490A;
+  z-index: -1;
 }
 
 .click:focus {
   color: #FFC107;
-}
-
-.line_height_2 {
-  line-height: 2rem;
 }
 
 .cardImg {
@@ -854,112 +913,7 @@ body {
   border-radius: 0.5rem;
 }
 
-.d_desktop_none {
-  display: none !important;
-}
-
-.card_image {
-  top: -2rem;
-  right: -2rem;
-}
-
-.w_0 {
-  width: 0%;
-}
-
-.w_25 {
-  width: 25%;
-}
-
-.w_33 {
-  width: 33.333%;
-}
-
-.w_50 {
-  width: 50%;
-}
-
-.w_66 {
-  width: 66.666%;
-}
-
-.w_75 {
-  width: 75%;
-}
-
-.w_100 {
-  width: 100%;
-}
-
-.w_auto {
-  width: auto;
-}
-
-/* --- 2. Fixed Scale Widths (بر مبنای rem برای المان‌های ثابت، دکمه، آیکون و بج) --- */
-/* مقیاس پایه: هر واحد = 0.5rem (معمولاً 8px) */
-.w_1 {
-  width: 0.5rem;
-}
-
-/* ~8px */
-.w_2 {
-  width: 1rem;
-}
-
-/* ~16px */
-.w_3 {
-  width: 1.5rem;
-}
-
-/* ~24px */
-.w_4 {
-  width: 2rem;
-}
-
-/* ~32px */
-.w_5 {
-  width: 2.5rem;
-}
-
-/* ~40px */
-.w_6 {
-  width: 3rem;
-}
-
-/* ~48px */
-.w_8 {
-  width: 4rem;
-}
-
-/* ~64px  (عالی برای ستاره تخفیف!) */
-.w_10 {
-  width: 5rem;
-}
-
-/* ~80px (برای ستاره بزرگتر یا آیکون خاص) */
-.w_12 {
-  width: 6rem;
-}
-
-/* ~96px */
-
-/* --- 3. Viewport Widths (اگر برای سکشن‌ها نیاز شد) --- */
-.w_screen {
-  width: 100vw;
-}
-
-.w_min {
-  width: min-content;
-}
-
-.w_max {
-  width: max-content;
-}
-
-/* Clasess Based On Styles Ends */
-
-
-/* Media Queries For Responsive */
+/* Media Queries */
 
 @media (max-width : 768px) {
   .d_flex {
