@@ -41,6 +41,12 @@ body {
   cursor: pointer;
 }
 
+.btnHover {
+  filter: brightness(0.95);
+  /* یا یک تغییر ریز برای حس کلیک‌شدن */
+  transform: translateY(-1px);
+}
+
 .overflow_hidden {
   overflow: hidden;
 }
@@ -297,6 +303,10 @@ body {
 
 .h_4 {
   height: 2rem;
+}
+
+.h_5 {
+  height: 2.5rem;
 }
 
 .h_6 {
@@ -721,12 +731,9 @@ body {
 }
 
 .titleIntro {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-top: 3rem;
   margin-bottom: 1rem;
-  width: 100%;
+  width: 75%;
   padding: 0 40px 0 40px;
 }
 
@@ -813,6 +820,12 @@ body {
   cursor: pointer;
 }
 
+.productBtnSmall:hover {
+  filter: brightness(0.95);
+  /* یا یک تغییر ریز برای حس کلیک‌شدن */
+  transform: translateY(-1px);
+}
+
 .productCover {
   position: absolute;
   background: rgba(0, 0, 0, 0.616);
@@ -866,6 +879,13 @@ body {
   gap: 1rem;
   border: none;
   color: inherit;
+}
+
+
+.btnBanner:hover {
+  filter: brightness(0.95);
+  /* یا یک تغییر ریز برای حس کلیک‌شدن */
+  transform: translateY(-1px);
 }
 
 .topScroll {
