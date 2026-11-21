@@ -41,7 +41,7 @@ body {
   cursor: pointer;
 }
 
-.btnHover {
+.btnHover:hover {
   filter: brightness(0.95);
   /* یا یک تغییر ریز برای حس کلیک‌شدن */
   transform: translateY(-1px);
