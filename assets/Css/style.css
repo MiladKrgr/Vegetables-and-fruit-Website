@@ -933,57 +933,207 @@ body {
   border-radius: 0.5rem;
 }
 
-/* Media Queries */
+/* Responsive layouts: desktop defaults, then tablet and mobile overrides */
 
-@media (max-width : 768px) {
-  .d_flex {
-    flex-wrap: wrap;
+/* Tablet and smaller laptops */
+@media (max-width: 1024px) {
+  nav {
+    gap: 1.25rem !important;
   }
 
-  .w_15 {
-    width: 40%;
-  }
-
-  .w_25 {
-    width: 100%;
-  }
-
-  .w_33 {
-    width: 100%;
-  }
-
-  .w_50 {
-    width: 100%;
-  }
-
-  .title {
-    font-size: 2rem;
-  }
-
-  .banner {
-    padding: 3em 2rem;
-  }
-
-  .dicount {
-    left: 70vw !important;
+  nav ul {
+    gap: 1rem !important;
   }
 
   .searchBox {
-    width: 80%;
+    max-width: 32vw;
+  }
+
+  .productItems {
+    width: calc(33.333% - 1rem);
+  }
+
+  .cardSection,
+  .articleSection,
+  .footerSection,
+  .bottomFooter {
+    width: 90%;
+  }
+
+  .cardItem,
+  .articleBox {
+    width: calc(50% - 1rem);
+  }
+
+  .card_container {
+    width: calc(50% - 1rem);
+  }
+
+  .titleIntro {
+    width: 90%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 0.75rem !important;
+    padding: 1rem !important;
+  }
+
+  nav > section:first-child {
+    display: block !important;
+    width: auto;
+  }
+
+  nav > section:first-child img {
+    width: 1.5rem;
+  }
+
+  nav > h1 {
+    font-size: 1.25rem;
+  }
+
+  nav > ul,
+  nav > .searchBox,
+  nav > section:last-child {
+    display: none !important;
+  }
+
+  #mobileSection:target {
+    width: min(100%, 22rem);
+    padding: 1.25rem;
+    opacity: 1;
+  }
+
+  .poster {
+    min-height: 0;
+    height: auto;
+    padding: 2rem 1rem;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  section.h_550 {
+    height: auto;
+  }
+
+  .discount-section,
+  .pic1 {
+    width: 100% !important;
+  }
+
+  .discount-section {
+    padding: 0.5rem !important;
+  }
+
+  .discount-section .title {
+    font-size: clamp(2rem, 9vw, 3rem);
+  }
+
+  .discount-section p {
+    font-size: 1.1rem;
+  }
+
+  .pic1 {
+    align-self: center;
+  }
+
+  .pic1 img {
+    transform: none;
+  }
+
+  .starDiscount {
+    right: 0.5rem !important;
+  }
+
+  .titleIntro {
+    width: 100%;
+    margin: 2rem 0 1rem;
+    padding: 0 1rem;
+  }
+
+  .titleIntro strong {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+
+  .productSection {
+    padding: 0 1rem;
+    gap: 0.75rem;
+  }
+
+  .productItems {
+    width: calc(50% - 0.5rem);
+    min-height: 15rem;
+  }
+
+  .cardSection,
+  .articleSection,
+  .footerSection,
+  .bottomFooter {
+    width: 100% !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .cardSection,
+  .articleSection {
+    flex-wrap: wrap;
+  }
+
+  .cardItem,
+  .articleBox,
+  .card_container {
+    width: 100% !important;
+  }
+
+  .cardImg {
+    height: auto;
+    max-height: 18rem;
+  }
+
+  .bannerBoxLeft,
+  .bannerBoxRight {
+    width: 100%;
+    padding: 3rem 1.25rem 2rem;
+  }
+
+  .bannerBoxLeft > div,
+  .bannerBoxRight > div {
+    width: 100%;
+  }
+
+  .footerSection {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .footerSection > div,
+  .footerSection > ul {
+    width: calc(50% - 1rem);
+  }
+
+  .bottomFooter {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .searchBox {
+    width: 100%;
+    max-width: none;
   }
 
   .searchBox select,
   .searchBox input {
+    min-width: 0;
     width: 50%;
-  }
-
-  .mainBannerBoxLeft,
-  .mainBannerBoxRight {
-    width: 100%;
-  }
-
-  .productItem {
-    width: 100%;
   }
 
   .d_mobile_none {
@@ -993,4 +1143,33 @@ body {
   .d_desktop_none {
     display: block !important;
   }
+
+  .topScroll {
+    right: 0.75rem;
+    bottom: 0.75rem;
+  }
 }
+
+/* Narrow phones */
+@media (max-width: 480px) {
+  .productItems {
+    width: 100%;
+  }
+
+  .bannerSection,
+  main .d_flex:has(> .bannerBoxLeft) {
+    flex-direction: column;
+  }
+
+  .footerSection > div,
+  .footerSection > ul {
+    width: 100%;
+  }
+
+  .bottomFooter {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
