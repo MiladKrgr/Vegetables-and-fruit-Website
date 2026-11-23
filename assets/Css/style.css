@@ -1148,6 +1148,63 @@ body {
     right: 0.75rem;
     bottom: 0.75rem;
   }
+
+#mobileSection > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+#mobileSection .searchBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+  width: auto;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+}
+
+#mobileSection .searchBox input {
+  flex: 1;
+  min-width: 0;
+  width: auto;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  padding: 0.4rem;
+  font-size: 0.85rem;
+}
+
+#mobileSection .searchBox select {
+  max-width: 6.5rem;
+  background: transparent;
+  border: none;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  outline: none;
+  color: #ffffff;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+#mobileSection .searchBox select option {
+  background-color: #0A490A; 
+  color: #ffffff;
+}
+
+#mobileSection .searchBox img {
+  width: 1.1rem;
+  height: 1.1rem;
+  object-fit: contain;
+  margin-left: 0.25rem;
+  opacity: 0.8;
+  flex-shrink: 0;
+}
+
 }
 
 /* Narrow phones */
